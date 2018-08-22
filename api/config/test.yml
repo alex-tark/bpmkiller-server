@@ -1,0 +1,11 @@
+debug_logging: false
+database:
+  driver:
+    tablesPrefix: test.
+  autoMigrationsRun: false
+  logging:
+    logSchemaCreation: true
+    logFailedQueryError: true
+    logQueries: false
+webpack_middleware:
+  enabled: false
