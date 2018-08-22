@@ -53,7 +53,7 @@ export default class AuthController {
         newUser.email = credentials.email;
         let hashedPassword = await bcrypt.hash(credentials.password, 3);
         newUser.hashedPassword = hashedPassword;
-        await this.getRepo().persist(newUser);
+        await this.getRepo().save(newUser);
 
         // Send confirmation email
         let confirmEmailToken = jwt.sign(
@@ -78,9 +78,9 @@ export default class AuthController {
         try {
             let decodedToken = jwt.verify(token, config.get("jwt.key"));
             let repo = this.getRepo();
-            let user = await repo.findOneById(decodedToken.userId);
+            let user = await repo.findOne({'id': decodedToken.userId});
             user.emailConfirmed = true;
-            repo.persist(user);
+            repo.save(user);
 
             redirectUrl = "/?confirmed=1";
         } catch (err) {

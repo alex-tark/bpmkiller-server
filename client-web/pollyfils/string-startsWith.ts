@@ -1,3 +1,4 @@
+/// <reference path="./string-startsWith.d.ts" />
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
 if (!String.prototype.startsWith) {
     String.prototype.startsWith = function(searchString, position) {

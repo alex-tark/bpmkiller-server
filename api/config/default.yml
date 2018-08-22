@@ -4,14 +4,13 @@ frontend_url: http://localhost:5000
 controllers:
   - controllers/*.ts
 database:
-  seed_test_data: true
-  driver:
-    type: postgres
-    host: localhost
-    port: 5433
-    username: postgres
-    password: postgres
-    database: dev_database
+  seed_test_data: false
+  type: postgres
+  host: localhost
+  port: 5433
+  username: postgres
+  password: postgres
+  database: dev_database
   autoMigrationsRun: true
   autoSchemaSync: true
   logging:

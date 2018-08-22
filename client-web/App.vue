@@ -6,14 +6,19 @@
 <script lang="ts">
     // Polyfills
     import 'whatwg-fetch';
-    import './polyfills/object-assign';
-    import './polyfills/array-find';
-    import './polyfills/string-startsWith';
+    import './pollyfils/object-assign';
+    import './pollyfils/array-find';
+    import './pollyfils/string-startsWith';
+
     import Vue from 'vue';
     import Component from 'vue-class-component';
     import AuthService from './services/Auth';
-    @Component
-    export default class App extends Vue { }
+
+    @Component({
+        template: ''
+    })
+    export default class App extends Vue {
+    }
 </script>
 
 <style lang="stylus">

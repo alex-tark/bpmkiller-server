@@ -4,19 +4,21 @@ import {
     ConnectionOptions,
     Connection
 } from "typeorm";
-
 import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConnectionOptions";
 import * as bcrypt from "bcryptjs";
-
 import User from "../models/User";
-
+import Contact from "../models/Contact";
 
 export type PostgresConnectionOptions = PostgresConnectionOptions;
 
 export default class DbInitializer {
-    static async init(connectionOptions: PostgresConnectionOptions, seed: boolean = false) {
+    static async init(
+        connectionOptions: PostgresConnectionOptions,
+        seed: boolean = false
+    ) {
+        // Get the options and clone to a new object since node-config gives a read-only object and TypeORM attempts to modify it.
         let options: any = Object.assign({}, connectionOptions);
-
+        // Prepend absolute path to entities/migrations items
         options.entities = options.entities.map(item => {
             return `${__dirname}/../${item}`;
         });
@@ -39,6 +41,7 @@ export default class DbInitializer {
     private static async seedData() {
         let connection = getConnection();
         let userRepo = connection.getRepository(User);
+        let contactRepo = connection.getRepository(Contact);
 
         // Create test user
         let email = "user@test.com";
@@ -51,5 +54,24 @@ export default class DbInitializer {
             user1.emailConfirmed = true;
             await userRepo.save(user1);
         }
+
+        // Create test contacts
+        let contact1 = new Contact({
+            id: 1,
+            lastName: "Finkley",
+            firstName: "Adam",
+            phone: "555-555-5555",
+            email: "adam@somewhere.com"
+        });
+        await contactRepo.save(contact1);
+
+        let contact2 = new Contact({
+            id: 2,
+            lastName: "Biles",
+            firstName: "Steven",
+            phone: "555-555-5555",
+            email: "sbiles@somewhere.com"
+        });
+        await contactRepo.save(contact2);
     }
 }

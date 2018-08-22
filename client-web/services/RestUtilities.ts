@@ -1,4 +1,5 @@
 import AuthStore from "../stores/Auth";
+import {RequestInfo} from "_debugger";
 
 export interface IErrorContent {
     errors: Array<IError>;
@@ -63,12 +64,13 @@ export default class RestUtilities {
             }
         }
 
-        return fetch(url, {
+        let params = {
             method: method,
             headers: headers,
             body: body
-        })
-            .then(response => {
+        };
+
+        return fetch(url, params as RequestInit).then(response => {
                 if (response.status == 401) {
                     // Unauthorized; redirect to sign-in
                     AuthStore.removeToken();
