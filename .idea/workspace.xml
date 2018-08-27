@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f104c865-d661-4a80-bf0e-824bcb8173a2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/Task.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/middlewares/Task.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/Task.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/repository/Task.repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routes/Task.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/Task.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/Database.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/Router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Task.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Task.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middlewares/Task.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/middlewares/Task.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Task.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Task.model.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,14 +18,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Task.controller.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Task.model.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Task.model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.controller.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Task.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="344">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.middleware.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/middlewares/Task.middleware.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -48,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Database.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/Database.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -77,24 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret line="2" column="65" lean-forward="true" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.model.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Task.model.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.controller.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/User.controller.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -142,14 +136,14 @@
         <option value="$PROJECT_DIR$/app/controllers/Auth.controller.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/models/Sample.model.ts" />
-        <option value="$PROJECT_DIR$/app/models/Task.model.ts" />
         <option value="$PROJECT_DIR$/app/repository/Task.repository.ts" />
         <option value="$PROJECT_DIR$/app/services/Task.service.ts" />
-        <option value="$PROJECT_DIR$/app/middlewares/Task.middleware.ts" />
-        <option value="$PROJECT_DIR$/app/controllers/Task.controller.ts" />
         <option value="$PROJECT_DIR$/app/routes/Task.route.ts" />
         <option value="$PROJECT_DIR$/config/Router.ts" />
         <option value="$PROJECT_DIR$/config/Database.ts" />
+        <option value="$PROJECT_DIR$/app/models/Task.model.ts" />
+        <option value="$PROJECT_DIR$/app/middlewares/Task.middleware.ts" />
+        <option value="$PROJECT_DIR$/app/controllers/Task.controller.ts" />
       </list>
     </option>
   </component>
@@ -309,12 +303,12 @@
       <workItem from="1535318536539" duration="515000" />
       <workItem from="1535334450831" duration="259000" />
       <workItem from="1535354392084" duration="14186000" />
-      <workItem from="1535395355267" duration="1706000" />
+      <workItem from="1535395355267" duration="2776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22371000" />
+    <option name="totallyTimeSpent" value="23441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -506,20 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/middlewares/Task.middleware.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/middlewares/User.middleware.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/User.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -548,34 +528,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Task.model.ts">
+    <entry file="file://$PROJECT_DIR$/config/Router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/User.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Task.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="86">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/User.route.ts">
+    <entry file="file://$PROJECT_DIR$/config/Database.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="65" lean-forward="true" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -589,22 +558,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Router.ts">
+    <entry file="file://$PROJECT_DIR$/app/middlewares/User.middleware.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Database.ts">
+    <entry file="file://$PROJECT_DIR$/app/controllers/User.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/User.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="65" lean-forward="true" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/middlewares/Task.middleware.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Task.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Task.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

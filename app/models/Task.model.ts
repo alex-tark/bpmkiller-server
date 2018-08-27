@@ -20,6 +20,6 @@ export class Task extends BaseEntity {
     @Column("text")
     public result: string;
 
-    @Column("date")
-    public time: Date;
+    @Column("bigint")
+    public time: number;
 }

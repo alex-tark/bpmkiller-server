@@ -18,6 +18,12 @@ export class TaskController {
     public static async Create(req: express.Request, res: express.Response) {
         const data = req.body;
         const task = new Task();
+        task.type = data.type;
+        task.description = data.description;
+        task.assigned = data.assigned;
+        task.status = data.status;
+        task.result = data.result;
+        task.time = data.time;
 
         try {
             const Result = await TaskService.Save(task);
