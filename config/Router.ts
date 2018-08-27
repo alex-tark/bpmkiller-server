@@ -3,6 +3,7 @@ import * as jwt from "express-jwt";
 import { anyCheck, anyCheckTwo } from "../app/middlewares/Sample.middleware";
 import { AuthRoute } from "../app/routes/Auth.route";
 import { SampleRoute } from "../app/routes/Sample.route";
+import { TaskRoute } from "../app/routes/Task.route";
 import { UserRoute } from "../app/routes/User.route";
 import { config } from "../config";
 
@@ -23,6 +24,13 @@ export const ROUTER: IROUTER[] = [{
     ],
     path: "/sample",
 }, {
+    handler: TaskRoute,
+    middleware: [
+        jwt({secret: config.SECRET}),
+    ],
+    path: "/task",
+},
+{
     handler: UserRoute,
     middleware: [
         jwt({secret: config.SECRET}),
